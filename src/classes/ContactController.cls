@@ -5,4 +5,8 @@ public with sharing class ContactController {
         // Unshelve tried
         return [select Id, Name,Level__c from Contact Limit 1];
     }
+    public static Contact getContact2() {
+    
+        return [select Id, Name,Level__c from Contact Limit 1];
+    }
 }
